@@ -1,0 +1,245 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Anirudh Raj Veeraboina | Senior Data Analyst Portfolio</title>
+  <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@300;500;700&display=swap" rel="stylesheet">
+  <style>
+    body {
+      font-family: 'Roboto', sans-serif;
+      margin: 0;
+      padding: 0;
+      background-color: #f5f5f5;
+      color: #333;
+    }
+
+    header {
+      background-color: #2c3e50;
+      color: white;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    header img {
+      width: 120px;
+      height: 120px;
+      border-radius: 50%;
+      object-fit: cover;
+      margin-bottom: 1rem;
+    }
+
+    header h1 {
+      margin: 0;
+      font-size: 2.5rem;
+    }
+
+    header p {
+      font-size: 1.2rem;
+      margin-top: 0.5rem;
+    }
+
+    .sidebar {
+      height: 100%;
+      width: 0;
+      position: fixed;
+      top: 0;
+      right: 0;
+      background-color: #2c3e50;
+      overflow-x: hidden;
+      transition: 0.5s;
+      padding-top: 60px;
+      z-index: 1100;
+    }
+
+    .sidebar a {
+      padding: 10px 20px;
+      text-decoration: none;
+      font-size: 18px;
+      color: white;
+      display: block;
+      transition: 0.3s;
+    }
+
+    .sidebar a:hover {
+      background-color: #34495e;
+    }
+
+    .sidebar .closebtn {
+      position: absolute;
+      top: 20px;
+      left: 20px;
+      font-size: 30px;
+    }
+
+    .menu-toggle {
+      position: fixed;
+      top: 1rem;
+      right: 1rem;
+      background-color: #2c3e50;
+      color: #fff;
+      border: none;
+      padding: 0.5rem 1rem;
+      border-radius: 5px;
+      cursor: pointer;
+      z-index: 1000;
+    }
+
+    main {
+      max-width: 900px;
+      margin: 2rem auto;
+      padding: 0 1rem;
+    }
+
+    .tile {
+      background-color: #ffffff;
+      padding: 1.5rem;
+      margin-bottom: 1.5rem;
+      border-radius: 12px;
+      box-shadow: 0 6px 16px rgba(0, 0, 0, 0.1);
+    }
+
+    .tile h2 {
+      border-left: 4px solid #3498db;
+      padding-left: 0.75rem;
+      font-size: 1.4rem;
+      margin-bottom: 1rem;
+      color: #2c3e50;
+    }
+
+    ul {
+      list-style: none;
+      padding: 0;
+    }
+
+    li {
+      margin-bottom: 0.75rem;
+      line-height: 1.5;
+    }
+
+    .contact {
+      background-color: #ecf0f1;
+      padding: 2rem 1rem;
+      text-align: center;
+    }
+
+    .footer {
+      text-align: center;
+      padding: 1rem;
+      font-size: 0.9rem;
+      color: #777;
+    }
+
+    .btn {
+      background-color: #3498db;
+      color: white;
+      padding: 0.5rem 1rem;
+      text-decoration: none;
+      border-radius: 4px;
+      display: inline-block;
+      margin-top: 1rem;
+      transition: background-color 0.3s ease;
+    }
+
+    .btn:hover {
+      background-color: #2980b9;
+    }
+  </style>
+</head>
+
+<body>
+  <button class="menu-toggle" onclick="openNav()">Menu</button>
+
+  <div id="sidebar" class="sidebar">
+    <a href="javascript:void(0)" class="closebtn" onclick="closeNav()">×</a>
+    <a href="#about">About</a>
+    <a href="#skills">Skills</a>
+    <a href="#professional experience">Professional Experience</a>
+    <a href="#projects">Projects</a>
+    <a href="#education">Education</a>
+    <a href="#contact details">Contact</a>
+  </div>
+
+  <header>
+    <img src="D:\Portfolio\Anirudh.jpg" alt="Manisha Katamoni">
+    <h1>Anirudhraj Veeraboina</h1>
+    <p>Senior Data Analyst | Expertise in Azure, Big Data | ETL Processes | SQL | Python</p>
+  </header>
+
+  <main>
+    <section class="tile" id="about">
+      <h2>About Me</h2>
+      <p>I am a Senior Data Analyst with 4+ years of experience, I worked with large-scale data sets and cloud technologies to deliver data solutions for various clients. I have successfully designed, developed, and deployed data pipelines, ETL processes, and data warehouses using tools and frameworks such as Azure DevOps Server, Snowflake, SQL Server, and Python.</p>
+    </section>
+
+    <section class="tile" id="skills">
+      <h2>Skills</h2>
+      <ul>
+        <li>☁️ Azure Data Factory, Azure Databricks, Azure DevOps, Azure SQL Database, Azure Blob Storage, Azure Data Lake </li>
+        <li>🛠️ Terraform, ARM Templates, Azure CLI</li>
+        <li>🐳 Docker, Kubernetes, GIT</li>
+        <li>🔐 Azure AD, Cloud Security, IAM</li>
+        <li>📜 Python (Pandas, PySpark), Scala, SQL, PowerShell, Snowflake</li>
+        <li>🔧 CI/CD: GitHub Actions, Jenkins, Azure DevOps</li>
+      </ul>
+    </section>
+
+    <section class="tile" id="experience">
+      <h2>Professional Experience</h2>
+      <ul>
+        <li><strong>Senior Data Analyst – Ernst & Young</strong><br>Leading end-to-end data migration from PeopleSoft to Oracle HCM, ensuring data integrity and compliance with business rules.Conducting data cleansing, transformation, and validation to ensure accuracy and consistency before migration.Coordinating with data stewards, client leadership, and cross-functional teams to align on data requirements and resolve discrepancies.  </li>
+        <li><strong>Data Engineer – Biztegy.</strong><br>Developed and implemented data pipelines to ingest, store and process large datasets using Apache Spark and Hive. Reduced manual data inputs by utilizing Azure cognitive services for form scanning and data input, achieving 30% labor cost efficiency.</li>
+	<li><strong>Data Engineer Intern – Iflex.</Researched emerging technologies related to big data processing, analytics and reporting tools. Established efficient ETL jobs scheduling mechanisms via crontrol-m jobs</li>
+	<li><strong>Data Engineer – Atos Syntel.</strong><br>Created ETL jobs to migrate data from various sources such as Oracle, MySQL, MS SQL Server into HDFS. Deployed machine learning algorithms to identify patterns in large scale datasets for predictive analytics purposes. </li>
+      </ul>
+    </section>
+
+    <section class="tile" id="projects">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>Data Migration from Legacy Systems to Oracle HCM Cloud for EdwardJones Client</strong> – Led Data Migration from scratch .</li>
+        <li><strong>Scheduling the Job and Creating ETL pipelines for CUNA Client</strong> – Real-time analytics with Spark clusters.</li>
+        <li><strong>Multi-Cloud Monitoring Framework</strong> – Unified observability across cloud platforms.</li>
+      </ul>
+    </section>
+
+    <section class="tile" id="education">
+      <h2>Education & Certifications</h2>
+      <ul>
+	<li><strong>Master of Science in Applied Computer Science</strong><br>Southeast Missouri State University, USA, 2022 – 2023</li>
+        <li><strong>B.Tech in Computer Science</strong><br>CMR Technical Campus, Hyderabad, 2015 – 2019</li>
+        <li><strong>Certifications:</strong>
+          <ul>
+            <li>🎓 Microsoft Azure Fundamentals(AZ-900)</li>
+            <li>🎓  Microsoft Azure Data Engineer Associate(DP-203) </li>
+            <li>🎓 SnowPro</li>
+          </ul>
+        </li>
+      </ul>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2>Contact Me</h2>
+      <p>Email: anirudhrajv27@gmail.com</p>
+      <p>LinkedIn: <a href="https://www.linkedin.com/in/anirudh-raj-b5825224b/" target="_blank">linkedin.com/in/anirudh-raj-b5825224b</a></p>
+      <a class="btn" href="/D:\Portfolio\Anirudh_Raj_Veeraboina_Resume.pdf" download>Download Resume</a>
+    </section>
+  </main>
+
+  <footer class="footer">
+    © 2025 Anirudhraj Veeraboina | All Rights Reserved
+  </footer>
+
+  <script>
+    function openNav() {
+      document.getElementById("sidebar").style.width = "250px";
+    }
+
+    function closeNav() {
+      document.getElementById("sidebar").style.width = "0";
+    }
+  </script>
+</body>
+
+</html>
